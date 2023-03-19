@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script type="text/javascript" src="save.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="delete.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="feedback.js" charset="UTF-8"></script>
+    <script type="text/javascript" src="saveCheck.js" charset="UTF-8"></script>
+    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body id="bod">
+    <h1>
+        Hey there,
+    </h1>
+    <div id="title" class="text">
+        Here you can enter your login information for moodle for some Ai <b>automation</b>.
+    </div>
+    <!-- <div id="text" class="text"> -->
+    <!-- Please read our -->
+    <!-- <a href="#" id="go-to-options">information</a>. -->
+    <!-- <script type="text/javascript" src="optionLink.js" charset="UTF-8"></script> -->
+    <!-- has to be loaded here -->
+    <!-- before starting. -->
+    <!-- By checking the box you agree to the security functions of password protection of chrome browser. -->
+    <!-- </div> -->
+    <!-- Added a nickname -->
+    <label for="name"></label>
+    <input class="input" type="text" id="name" placeholder="nickname" autocomplete="name">
+
+    <label for="username"></label>
+    <input class="input" type="text" id="username" placeholder="username" autocomplete="username">
+    <label for="password"></label>
+    <input class="input" type="password" id="password" placeholder="password" autocomplete="current-password">
+    <br>
+    <button class="save">Save</button>
+    <!-- <input type="radio" id="radio" name="on/off" value -->
+    <!-- <input type="checkbox" id="checkbox" /><label for="checkbox">Autofill</label> -->
+    <input type="checkbox" id="checkbox" name="Autofill">
+    <!-- <label> 
+          <input id="checkbox" type="checkbox" name="switch" > On
+        </label> -->
+    <!-- <button class="checkbox" id="checkbox">On</button> -->
+    <button class=" delete ">Delete Stored</button>
+    <button class="feedback ">Give Feedback</button>
+</body>
+
+</html>

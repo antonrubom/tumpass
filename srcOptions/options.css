@@ -1,0 +1,44 @@
+/* dynamic design but only for landscape desktop view */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background: #d5d5d5;;
+}
+
+.disclaimer-wrapper {
+    border-radius: 25px;
+    background: #0065bd;
+    padding: 40px;
+    margin: auto 15vh;
+}
+
+h1, .text {
+    color: #d5d5d5;
+}
+
+h1 {
+    font-size: 4vh;
+}
+
+/* better readability for the long text */
+.text {
+    font-size: 3vh;
+    font-family: 'Georgia', serif;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased !important;
+    text-rendering: optimizelegibility !important;
+    letter-spacing: .03em;
+}
+
+/* visited, selected & unvisited link */
+a:link, a:visited, a:active {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: #c6ddff;
+}
+

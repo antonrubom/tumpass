@@ -1,0 +1,33 @@
+body {
+    background-color: #ebeef6;
+    min-width: 300px; /* max would be 800 */
+    font-family: 'Helvetica', sans-serif;
+    color: #0065bd;
+    text-align: justify;
+    text-justify: inter-word;
+    margin: 2em;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.text {
+    font-size: 16px;
+    margin-bottom: 1em;
+}
+
+.small-text {
+    font-size: 10px;
+}
+
+/* visited & unvisited link */
+a:link, a:visited {
+    color: #0065bd;
+}
+
+/* mouse over link */
+a:hover {
+    color: #6da7e3;
+}
+
