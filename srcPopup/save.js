@@ -4,10 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
             let user = items.moodle_key.username
             if (user) {
                 document.getElementById('title').innerHTML =
-                    'Hey there, Antony, email: ' + user + '</b>. ' +
+                    'There is login information stored for <b>' + user + '</b>. ' +
                     'If you want to change it simply enter the new login data.' +
                     ''
-                document.getElementById('bod').getElementsByTagName('h1').innerHTML = '<h1>Hey there, Antony<h1>' + ''
             }
         }
     })
@@ -17,17 +16,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function onclick() {
         let username = document.getElementById('username').value
         let password = document.getElementById('password').value
-
+        console.log(username, password)
         chrome.storage.local.set({ 'moodle_key': { "username": username, "password": password } }, function() {
-            if (chrome.runtime.error) {
-                console.error("An error with local storage was found. If this presists please contact us.");
-            }
-        });
-
-        let checkbox = document.getElementById('checkbox').checked
-            //set to true or false, we will need to have the checkbox set at the begining of the browser session
-
-        chrome.storage.local.set({ 'check_key': { "checkbox": checkbox } }, function() {
             if (chrome.runtime.error) {
                 console.error("An error with local storage was found. If this presists please contact us.");
             }
