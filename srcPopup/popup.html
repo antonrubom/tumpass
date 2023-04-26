@@ -12,24 +12,23 @@
 </head>
 
 <body id="bod">
-    <h1>
-        Hey there,
-    </h1>
-    <div id="title" class="text">
-        Here you can enter your login information for moodle for even <b>more automation</b>.
+    <div id="top" class="text">
+        <h1>
+            Hey there,
+        </h1>
     </div>
+    <button id="dropdown-btn">Show more</button>
     <div id="text" class="text">
-        If you are concerned about the <b>security</b> of your login data please read our
-        <a href="#" id="go-to-options">information</a>.
+        For more information please read our
+        <a href="#" id="go-to-options"><b>security</b></a>
         <script type="text/javascript" src="optionLink.js" charset="UTF-8"></script>
         <!-- has to be loaded here -->
-        TL;DR: your TUM login is <b>not encrypted</b> but stored <b>only locally</b>.
-        <br> The security is comparable with the chrome/edge password autofill feature.
+        The security is comparable with the chrome password autofill feature.
     </div>
     <label for="username"></label>
     <input class="input" type="text" id="username" placeholder="username" autocomplete="username">
     <label for="password"></label>
-    <input class="input" type="password" id="password" placeholder="password" autocomplete="current-password">
+    <input class="input" type="password" id="password" placeholder="password" autocomplete="password">
     <br>
     <button class="save">Save</button>
     <button class="delete">Delete Stored</button>
